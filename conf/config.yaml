@@ -1,0 +1,44 @@
+system:
+  domain: mall
+  version: 2.0
+  env: "dev"
+  HttpPort: ":5001"
+  Host: "localhost"
+  UploadModel: "local"
+
+database:
+  dialect: "mongodb"
+  dbHost: "10.62.0.228"
+  dbPort: "27017"
+  userName: "mall"
+  password: "123456"
+  dbName: "gin_mail"
+
+redis:
+  redisDbName: 4
+  redisHost: 127.0.0.1
+  redisPort: 6379
+  redisPassword: 123456
+  redisNetwork: "tcp"
+
+cache:
+  cacheType: redis
+  cacheEmpires: 600
+  cacheWarmUp:
+  cacheServer:
+
+email:
+  address: http://localhost:8080/#/vaild/email/
+  smtpHost:
+  smtpEmail:
+  smtpPass:
+
+encryptSecret:
+  jwtSecret: "FanOne666Secret"
+  emailSecret: "EmailSecret"
+  phoneSecret: "PhoneSecret"
+
+photoPath:
+  photoHost: http://127.0.0.1
+  ProductPath: /static/imgs/product/
+  AvatarPath: /static/imgs/avatar/
